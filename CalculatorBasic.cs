@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Security;
@@ -55,9 +55,17 @@ namespace MyFirstProject
                     }
                     else if (option == 4)
                     {
-                        int answer = num1 / num2;
-                        Console.WriteLine($"The answer for {num1} / {num2} is {answer}");
-                        running = false;
+                        if(num2 != 0)
+                        {
+                            int answer = num1 / num2;
+                            Console.WriteLine($"The answer for {num1} / {num2} is {answer}");
+                            running = false;
+                        }
+                        else
+                        {
+                            Console.WriteLine("cannot devide by 0");
+                        }
+                        
                     }
                     else
                     {
